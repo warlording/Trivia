@@ -24,10 +24,6 @@ $(document).ready(function() {
         return roll;
     }
 
-    function randomCongrats() {
-        var messageRoll = randomNum(congratsMessages.length);
-    }
-
     function countDown() {
         $('.pickAnswer').click(function() {
             $(this).data('clicked', true);
@@ -151,7 +147,7 @@ $(document).ready(function() {
             if (userChoice === questions[currentQuestionIndex].answer) {
                 correctCounter++;
                 currentQuestionIndex++
-                randomCongrats();
+               
 
             } else {
                 incorrectCounter++;
